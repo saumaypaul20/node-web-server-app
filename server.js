@@ -53,6 +53,13 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('about.hbs', {
+        title: 'Projects',    
+        msgauthor:'Saumay Paul'
+    });
+});
+
 app.listen(port, () =>{
     console.log(`Server is up on PORT ${port}`);
 });
